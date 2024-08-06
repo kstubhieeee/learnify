@@ -1,80 +1,83 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
-.container {
-    width: 90%;
-    margin: auto;
-    overflow: hidden;
-}
+ body {
+     font-family: 'Varela Round', sans-serif;
+     margin: 0;
+     padding: 0;
+     background-color: #f4f4f4;
+ }
 
-h1 {
-    text-align: center;
-    margin-top: 20px;
-}
+ .container {
+     width: 90%;
+     margin: auto;
+     overflow: hidden;
+ }
 
-.content {
-    display: flex;
-    justify-content: space-between;
-}
+ h1 {
+     text-align: center;
+     margin-top: 20px;
+ }
 
-.pdf-viewer {
-    width: 65%;
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+ .content {
+     display: flex;
+     justify-content: space-between;
+ }
 
-.sections {
-    width: 30%;
-}
+ .pdf-viewer {
+     width: 65%;
+     background: #fff;
+     padding: 20px;
+     border: 1px solid #ddd;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
 
-.section {
-    background: #fff;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-}
+ .sections {
+     width: 30%;
+ }
 
-.section-header {
-    background: #eee;
-    border: none;
-    width: 100%;
-    padding: 15px;
-    text-align: left;
-    cursor: pointer;
-    font-size: 18px;
-}
+ .section {
+     background: #fff;
+     margin-bottom: 10px;
+     border: 1px solid #ddd;
+ }
 
-.section-content {
-    display: none;
-    padding: 15px;
-}
+ .section-header {
+     background: #eee;
+     border: none;
+     width: 100%;
+     padding: 15px;
+     text-align: left;
+     cursor: pointer;
+     font-size: 18px;
+ }
 
-.file-upload {
-    margin: 10px 0;
-}
+ .section-content {
+     display: none;
+     padding: 15px;
+ }
 
-.file-upload input[type="file"] {
-    width: 100%;
-}
+ .file-upload {
+     margin: 10px 0;
+ }
 
-#pdf-canvas {
-    width: 100%;
-    height: auto;
-}
+ .file-upload input[type="file"] {
+     width: 100%;
+ }
 
-.pdf-controls {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
+ #pdf-canvas {
+     width: 100%;
+     height: auto;
+ }
 
-.pdf-controls button {
-    padding: 10px;
-    font-size: 14px;
-    cursor: pointer;
-}
+ .pdf-controls {
+     display: flex;
+     justify-content: space-between;
+     margin-top: 10px;
+ }
+
+ .pdf-controls button {
+     padding: 10px;
+     font-size: 14px;
+     cursor: pointer;
+ }

@@ -12,39 +12,43 @@
     <div class="container">
         <div class="video-section">
             <div class="video-player">
-                <!-- Increase the height for better visibility -->
-                <iframe id="videoPlayer" width="100%" height="600px" src="" frameborder="0" allowfullscreen></iframe>
+                <iframe id="videoPlayer" src="" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="video-details">
                 <h1 id="videoTitle">Video Title</h1>
-                <div class="progress">Your progress</div>
+            </div>
+            <div class="notes-section">
+                <h2>Notes</h2>
+                <textarea id="noteInput" placeholder="Write your notes here..."></textarea>
+                <button id="saveNoteBtn">Save Note</button>
+                <ul id="notesList"></ul>
             </div>
         </div>
         <div class="sidebar">
             <div class="course-content">
-                <h2>Course content</h2>
+                <h2>Course Content</h2>
                 <div class="section">
                     <button class="accordion">Section 1: Front-End Web Development</button>
                     <div class="panel">
-                        <button class="video-link" data-video-id="tNrNLoCqzco">DBMS Overview</button>
+                        <button class="video-link" data-video-id="tNrNLoCqzco">Introduction to DBMS</button>
                         <button class="video-link" data-video-id="4Wa5DivljOM">Relational Databases</button>
-                        <button class="video-link" data-video-id="XGxGfw_voUQ">Normalization</button>
+                        <button class="video-link" data-video-id="XGxGfw_voUQ">Database Normalization</button>
                     </div>
                 </div>
                 <div class="section">
                     <button class="accordion">Section 2: Introduction to HTML</button>
                     <div class="panel">
-                        <button class="video-link" data-video-id="VIDEO_ID_1">DBMS Overview</button>
-                        <button class="video-link" data-video-id="VIDEO_ID_2">Relational Databases</button>
-                        <button class="video-link" data-video-id="VIDEO_ID_3">Normalization</button>
+                        <button class="video-link" data-video-id="VIDEO_ID_1">HTML Basics</button>
+                        <button class="video-link" data-video-id="VIDEO_ID_2">HTML Forms</button>
+                        <button class="video-link" data-video-id="VIDEO_ID_3">HTML5 New Features</button>
                     </div>
                 </div>
                 <div class="section">
                     <button class="accordion">Section 3: Introduction to DBMS</button>
                     <div class="panel">
-                        <button class="video-link" data-video-id="VIDEO_ID_1">DBMS Overview</button>
-                        <button class="video-link" data-video-id="VIDEO_ID_2">Relational Databases</button>
-                        <button class="video-link" data-video-id="VIDEO_ID_3">Normalization</button>
+                        <button class="video-link" data-video-id="VIDEO_ID_1">What is DBMS?</button>
+                        <button class="video-link" data-video-id="VIDEO_ID_2">Types of DBMS</button>
+                        <button class="video-link" data-video-id="VIDEO_ID_3">Advanced DBMS Concepts</button>
                     </div>
                 </div>
             </div>
