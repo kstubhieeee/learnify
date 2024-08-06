@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.video-section {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.video-player video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-details {
+    margin-top: 10px;
+}
+
+.video-details h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.video-details .progress {
+    margin-top: 10px;
+    color: #666;
+}
+
+.sidebar {
+    flex: 1;
+    max-width: 300px;
+}
+
+.course-content h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.panel p {
+    margin: 10px 0;
+}

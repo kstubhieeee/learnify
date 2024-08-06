@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.class-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.class-card {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.class-header {
+    padding: 15px;
+    color: #fff;
+}
+
+.class-header h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.class-header p {
+    margin: 5px 0;
+}
+
+.class-body {
+    padding: 15px;
+    color: #333;
+}
+
+.class-body p {
+    margin: 5px 0;
+}
+
