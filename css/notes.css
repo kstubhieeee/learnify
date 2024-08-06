@@ -61,3 +61,20 @@ h1 {
 .file-upload input[type="file"] {
     width: 100%;
 }
+
+#pdf-canvas {
+    width: 100%;
+    height: auto;
+}
+
+.pdf-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.pdf-controls button {
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
