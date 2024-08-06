@@ -12,13 +12,11 @@
     <div class="container">
         <div class="video-section">
             <div class="video-player">
-                <video controls>
-                    <source src="your-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <!-- Increase the height for better visibility -->
+                <iframe id="videoPlayer" width="100%" height="600px" src="" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="video-details">
-                <h1>video title</h1>
+                <h1 id="videoTitle">Video Title</h1>
                 <div class="progress">Your progress</div>
             </div>
         </div>
@@ -28,22 +26,27 @@
                 <div class="section">
                     <button class="accordion">Section 1: Front-End Web Development</button>
                     <div class="panel">
-                        <p>Lesson 1</p>
-                        <p>Lesson 2</p>
-                        <p>Lesson 3</p>
-                        <!-- Add more lessons as needed -->
+                        <button class="video-link" data-video-id="tNrNLoCqzco">DBMS Overview</button>
+                        <button class="video-link" data-video-id="4Wa5DivljOM">Relational Databases</button>
+                        <button class="video-link" data-video-id="XGxGfw_voUQ">Normalization</button>
                     </div>
                 </div>
                 <div class="section">
                     <button class="accordion">Section 2: Introduction to HTML</button>
                     <div class="panel">
-                        <p>Lesson 1</p>
-                        <p>Lesson 2</p>
-                        <p>Lesson 3</p>
-                        <!-- Add more lessons as needed -->
+                        <button class="video-link" data-video-id="VIDEO_ID_1">DBMS Overview</button>
+                        <button class="video-link" data-video-id="VIDEO_ID_2">Relational Databases</button>
+                        <button class="video-link" data-video-id="VIDEO_ID_3">Normalization</button>
                     </div>
                 </div>
-                <!-- Repeat for more sections -->
+                <div class="section">
+                    <button class="accordion">Section 3: Introduction to DBMS</button>
+                    <div class="panel">
+                        <button class="video-link" data-video-id="VIDEO_ID_1">DBMS Overview</button>
+                        <button class="video-link" data-video-id="VIDEO_ID_2">Relational Databases</button>
+                        <button class="video-link" data-video-id="VIDEO_ID_3">Normalization</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
