@@ -58,34 +58,22 @@ function onNextPage() {
 document.getElementById("prev-page").addEventListener("click", onPrevPage);
 document.getElementById("next-page").addEventListener("click", onNextPage);
 
-document
-  .querySelectorAll('.file-upload input[type="file"]')
-  .forEach((input) => {
-    input.addEventListener("change", function () {
-      if (this.files && this.files[0]) {
-        var file = this.files[0];
-        var reader = new FileReader();
-        reader.onload = function (e) {
-          var loadingTask = pdfjsLib.getDocument({ data: e.target.result });
-          loadingTask.promise.then(function (pdf) {
-            pdfDoc = pdf;
-            document.getElementById("page-count").textContent = pdf.numPages;
-            pageNum = 1;
-            renderPage(pageNum);
+function loadPdf(path) {
+  var loadingTask = pdfjsLib.getDocument(path);
+  loadingTask.promise.then(function (pdf) {
+    pdfDoc = pdf;
+    document.getElementById("page-count").textContent = pdf.numPages;
+    pageNum = 1;
+    renderPage(pageNum);
 
-            // Enable the download button
-            document.getElementById("download-pdf").onclick = function () {
-              const link = document.createElement("a");
-              link.href = URL.createObjectURL(file);
-              link.download = file.name;
-              link.click();
-            };
-          });
-        };
-        reader.readAsArrayBuffer(file);
-      }
-    });
+    document.getElementById("download-pdf").onclick = function () {
+      const link = document.createElement("a");
+      link.href = path;
+      link.download = path.split("/").pop();
+      link.click();
+    };
   });
+}
 
 function toggleSection(sectionNumber) {
   var content = document.getElementById("section-" + sectionNumber);
@@ -95,3 +83,13 @@ function toggleSection(sectionNumber) {
     content.style.display = "block";
   }
 }
+
+document.querySelectorAll(".complete-check").forEach((checkbox) => {
+  checkbox.addEventListener("change", function () {
+    if (this.checked) {
+      this.previousElementSibling.classList.add("complete");
+    } else {
+      this.previousElementSibling.classList.remove("complete");
+    }
+  });
+});

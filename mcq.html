@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Quiz App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/mcq.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo"><img src="./img/logo.png" style="width: 140px;" alt=""></div>
+            <div class="profile">
+                <img src="./img/kaustubh.jpg" alt="Profile Picture">
+                <span>Kaustubh Bane</span>
+            </div>
+        </header>
+        <main>
+            <div class="quiz-container">
+                <div class="timer">
+                    <i class="fas fa-clock"></i>
+                    <span class="time">00:30</span>
+                </div>
+                <div class="question">
+                    <span>Question <span id="question-number">1</span> of 10</span>
+                    <p id="question-text">Which of the following is a popular programming language for developing
+                        multimedia webpages?</p>
+                </div>
+                <div class="options" id="options">
+                    <button>A. COBOL</button>
+                    <button>B. HTML</button>
+                    <button>C. CSS</button>
+                    <button>D. JavaScript</button>
+                </div>
+                <div class="navigation">
+                    <button class="nav-button" id="prev"><i class="fas fa-arrow-left"></i> Prev</button>
+                    <div class="page-numbers">
+                        <button class="page-number" data-number="1">1</button>
+                        <button class="page-number" data-number="2">2</button>
+                        <button class="page-number" data-number="3">3</button>
+                        <button class="page-number" data-number="4">4</button>
+                        <button class="page-number" data-number="5">5</button>
+                        <button class="page-number" data-number="6">6</button>
+                        <button class="page-number" data-number="7">7</button>
+                        <button class="page-number" data-number="8">8</button>
+                        <button class="page-number" data-number="9">9</button>
+                        <button class="page-number" data-number="10">10</button>
+                    </div>
+                    <button class="nav-button" id="next">Next <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <button class="submit-button">Submit</button>
+                <div class="score">
+                    <div class="circle">
+
+                    </div>
+                </div>
+                <div class="final-score">
+                    <p>Your final score is <span id="final-score"></span>/10</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./src/mcq.js"></script>
+</body>
+
+</html>
